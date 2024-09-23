@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.get("/", async (req, res) => {
     const options = {
         method: 'GET',
-        headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-Vai83zDdBjhvcksfceFFF6qg'}
+        headers: {accept: 'application/json', 'x-cg-demo-api-key': 'API-KEY'}
     };
     try { 
         const response = await axios.get(API_URL + 'simple/price?ids=binance-peg-polkadot&vs_currencies=usd&include_market_cap=false&include_24hr_vol=false&include_24hr_change=true&include_last_updated_at=true', options);
